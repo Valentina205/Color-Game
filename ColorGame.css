@@ -1,0 +1,90 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+.Square {
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    background-color: purple;
+    /*Para redondear los bordes del cuadro*/
+    border-radius: 15%;
+    /*La transición se hace como la de los botones*/
+    transition: background-color 0.6s;
+    /*Estas se agregan para que funcione en todos los navegadores*/
+    -webkit-transition: background-color 0.6s;
+    -moz-transition: background-color 0.6s;
+}
+
+#Container {
+    /* Pone margen 20px arriba y abajo y auto izquierda y derecha */
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding: 20px 0;
+
+    transition: background-color 0.6s;
+    /*Estas se agregan para que funcione en todos los navegadores*/
+    -webkit-transition: background-color 0.6s;
+    -moz-transition: background-color 0.6s;
+
+}
+
+#ColorDisplay {
+    font-size: 200%;
+}
+
+
+#Stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.Selected {
+    background-color: steelblue;
+    color: white;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    /*Para quitar la linea que rodea el boton cuando se selecciona*/
+    outline: none;
+    /*inherit significa que hereda esa caracteristica de su elemento padre, en este caso el h1*/
+    font-size: inherit;
+    /*transition es como se ve el cambio, el primer dato es en que se quiere hacer transicion y el segundo cuanto queremos que tome esa transición en segundos*/
+    transition: all 0.3s;
+    /*Estas se agregan para que funcione en todos los navegadores*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+
+}
+
+/*hover es que se está interactuando con ese elemento*/
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+#Message {
+    display: inline-block;
+    width: 20%;
+}
